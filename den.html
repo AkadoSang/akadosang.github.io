@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Akadosang.GitHub.io by AkadoSang</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a id="welcome" href="index.html">Welcome to Akado's Blog</a></h1>
+        <img id="avatar" src="images/avatar.png">
+        <br>
+        <br>
+        <p>In this blog I'll share my thoughts on cryptocurrency and how exchanges can provide a better service to their users.</p>
+
+
+        <p class="view"><a href="https://github.com/AkadoSang">View My GitHub Profile</a></p>
+
+      </header>
+      <section>
+          
+          <h1><a class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Decentralized Exchange Network as a Platform for Centralized Exchanges</h1>
+          
+        <p>In this post I’ll try to discuss the flaws with the existent models used by exchanges or how these can be exploited and try to show the benefits of a decentralized network of exchanges. This is, multiple exchanges operating directly on the blockchain and competing with each other.</p>
+        <p>You could argue that we would only need bridges (in/off ramps) to get in and out, but you have to consider that centralized exchanges aren’t going away anytime soon, that both users and those same businesses benefit from this relationship and that having many businesses around is good for the ecosystem. They attract new users and more capital. So there’s not really a reason to discard them. Both users and 3rd party services can coexist, mutually benefiting each other.</p>
+          <p>As we’ve seen in the past, there were countless events where exchanges caused huge losses to their customers. These events were either caused by malicious intent or bad management and negligence. The good news is, any problem that happens from this point onwards can be avoided thanks to decentralized exchanges. It’s time we start to care more about where we store our money and demand better business practices from exchanges and services in this industry.</p>
+
+        <h2>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Two Main Points of Failure</h2>
+
+        <p>Although exchanges have many issues, I think there are two important points of failure that we’ve seen exploited again and again. These are the exchange’s wallets and the integrity of their databases. A malicious entity somehow gets access and steals the coins from the supposed “cold” wallet when this one makes a transaction to the hot wallet, stealing coins in the process or the database Is simply inconsistent and exploited. </p>
+          <p><strong>How can we prevent this?</strong></p>
+          <p>Regarding the wallet’s security, the safer method that I’m aware of should be multisignature. With this feature, many hacks could have been prevented and although known, it kept some exchange owners from using them, causing massive losses that could have easily been prevented.</p>
+          <p>Regarding the database, it should have a set of proprieties that allow transactions to be processed reliably and the database to be consistent. These proprieties are known by the acronym ACID. Quoting a post from the r/bitcoin (sorry, original author):</p>
+          
+          <ul id="acid-list">
+          <li>Atomicity (transaction is processed as a whole, e.g. if transaction moves money from account A to B, you cannot get to a situation when only one balance is updated)</li>
+          <li>Isolation (concurrent transaction do not interfere with each other)</li>
+          <li>Consistency (data always satisfies constraints)</li>
+          <li>Durability (data is stored permanently after transaction is committed)</li></ul>
+          
+          <p>If the database doesn’t have these proprieties, then what happens is it’s more easily exploitable. For example, users able to withdraw funds that they don’t have or opening multiple tabs and being able to place the same orders multiple times, etc. Consequently, funds are lost and users are damaged.</p>
+          
+          
+<h2>
+<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span class="octicon octicon-link"></span></a>Bad Management and Vulnerabilities</h2>
+
+<p>There are, however, a few other problems that are common to centralized entities and are not cryptocurrency exchange specific. These can easily happen and might have happened already in the past, caused by exchange owners with malicious intent. 
+
+Running on a fractional reserve. 
+This means that exchanges are operating with funds that don’t possess. See Mt.Gox, or more recently, even though it’s not 100% certain, Cryptsy. This happens when the exchanges don’t have the funds that should have, funds that belong to their customers. It could happen due to multiple reasons, exchange might have been hacked and didn’t want to disclose it to avoid damaging its reputation, exchange owners deliberately using customer funds for themselves without anyone knowing, etc. However, sooner or later this will have an end and it all starts when there’s a surge in withdrawals. As people try to withdraw their funds and start to notice delays, other people urge to do the same afraid of losing their funds. The first ones might be lucky but eventually the exchange can’t keep up because it just doesn’t hold the funds it should have. Customers should always demand exchanges to provide proof of not being running a fractional reserve. They also should have the right to be able to audit it at any time they want.
+
+Front running. 
+This is when whoever manages the database and has access to information general public doesn’t have, uses it to his own advantage. That person could place bids before other customers, without them even being aware. It could easily know the amount of deposits and withdrawals and know beforehand someone is about to dump. Basically, for the average person, it’s as if he could see the future, being always one step ahead.
+
+Information leaks.
+Exchanges communicate through email. You think your transactions are relatively safe on the blockchain. They can be analyzed but it can be tough for someone else to figure it out. They don’t need to. They only need to attack the weakest link, email. Emails are not PGP encrypted and they could contain financial information about you, like your bitcoin address for example. That could be seen in plain text. From that, an attacker might find it easier to link transactions to you. Here’s an interesting post about it on reddit https://www.reddit.com/r/Bitcoin/comments/359n3p/plain_text_emails_divulge_financial_transactions/
+
+DDOS
+The most common type of attack. Getting an exchange down can have several implications on the price, according to how bad the attack is. You might, well, the exchange’s only need to find someone who can provide a service good enough to handle these attacks. That’s true, however most exchanges use the same service, named Cloudfare. This ends up turning into a central point of failure, from which many exchanges and services are dependent on.
+</p>
+
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>What if there’s a better solution?</h3>
+
+<p>Ok, then, how can we solve all of these problems? We can’t. We can, however, decrease potential points of failure and guarantee a higher chance of success and prevent attacks. How? Using decentralized exchanges with the help of blockchain technology. What if these exchanges migrated their services to the blockchain? Imagine a decentralized exchange running on top of a blockchain with the help of smart contracts for example. Imagine too, that a few exchanges join and thus, creating a Decentralized Exchange Network.
+
+“It’s not bulletproof yet, I can still think of some issues that can affect customers”
+Sure there are, there’s not a magical solution for this, but we can help mitigate attacks and provide better services for everyone right? At least that should be one of the objectives of whoever manages any kind of service. In this case, we’re dealing with money so security is something to be taken really seriously.
+
+
+“How would that work?”
+Basically, the blockchain would act as the exchange’s database, keeping the funds of their customers safe. By doing that we’re already eliminating one big factor of risk, which is inconsistent databases and securing the integrity of data. These have been the cause of many losses in the past. This should actually reduce time and money to the exchange as they wouldn’t have to manage and monitor a database anymore, which means, more money for them.
+
+“What if I wanted to trade other cryptocurrencies, only available on other chains?”
+Well, I’m not the most technical person to go into details but there seem to be a few solutions around. You can create an UIA (user issued asset) that represents a certain cryptocurrency. This is not so different of the method we know since all exchanges operate with IOUs, the same way as banks. When we make a trade, we’re not actually trading one bitcoin for money, we’re trading IOUs, tokens that represent the value the original asset has.
+Other way if you prefer to eliminate the trust factor is creating an UIA that is backed by a real asset. This would mean there couldn’t be more than a certain amount of that asset if there is not enough collateral backing it up.
+
+Maybe in the near future we’ll have cross chain transactions and this we’ll be possible without the need of IOUs or UIAs.
+
+Either way, at least one factor was eliminated. If you trust any exchange to trade on, you should be able to trust any asset issued by an exchange on the blockchain. It’s almost the same thing, with one positive difference. Since these assets are issued on chain and not on a regular database, you, the customer, hold the private keys. So for the first time, you could actually trade while being sure your funds are safe because finally you’re the one holding the private keys to your funds and not the exchange itself. As you should know, any funds you hold on any exchange aren’t yours. The exchange holds the private keys, the exchange holds your coins, not you.
+
+“But what if I want to withdraw my funds and trade them for cash?”
+That will obviously require a third party. You might be thinking that’s not decentralized at all. The fact is, there’s really no other way at the moment to get cash into crypto without going through this process unless you use a service like LocalBitcoins. What can be made, once again, is to reduce the risk the most we can. How? Using those same third party services as bridges. If you look, you see most losses happen on exchanges and why is that? Because customers park their coins there like their personal wallet. Now that you have decentralized exchanges, you can do this and relax because you’re the only one holding the private keys. In order to withdraw or deposit you must go through a 3rd party but it only holds your funds momentarily. It only takes those minutes of confirmation time to receive your coins and credit the other ones on your wallet at the decentralized exchange. It’s something that happens very quickly. You don’t park your funds there so the chances of you losing your money are reduced and you’d have to be very unlucky. If by any chance this happens to anyone, first, it only happens to a few people and second, you can use another bridge that, once again, only holds your funds momentarily. Same thing if you want to trade it for cash, it’s only up to the bridge service to take care of any legal issues it might have, like KYC and stuff like that. Examples of this are ShapeShift, Metaexchange or simply using an exchange to get your cash in, buy your coins and send them to your wallet. What matters is that you don’t park your funds there for a long period of time, reducing this way, the chances of losing your money.
+
+“You’re messing up their business model, they won’t make money and simply won’t provide their service on top of a decentralized exchange/blockhain”
+This is not true. After the following paragraph I will give you a couple examples on how they can still be profitable. 
+You can argue that not profiting, they will simply refuse to join. That if f they don’t join, people won’t join too because the exchanges will have the volume and liquidity people need to trade. Don’t forget this is up to us to change. If you’ve been damaged and lost money with any scam or exchange, do you want it to happen again? If you haven’t, are you willing to take the risk and lose your hard earned money? That’s up to each one of us to decide what’s best. Everything starts off small. It only takes a few people to join, a few market makers and volume can pick up. Of course this also depends on each blockchain’s proprieties and if they can offer the right incentives to trade there.
+All of this is true but exchanges can still have a profitable business model. They can act as a bridge and take a fee out of each deposit/withdraw. With 2.0 chains and smart contracts, a whole world of opportunities awaits. By issuing your own asset, you can charge a fee each time this is transacted. You can refer people and earn a percentage of the fees they pay to the network, etc. Possibilities are endless. It’s only up to us to come up with better ideas that can support a viable business models and some already exist!
+</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>How do Users Benefit?</h3>
+
+<p>I think I have described some of them throughout this post, but I’ll name a few.
+
+Better Security
+Users own the private keys to their funds and you can be sure they’re safe on your account. We’ve seen countless examples of exchanges loosing funds to hackers or simply scamming their own users. This won’t happen now. Assume on this decentralized exchange network, all trade the same asset. This makes the fact that any exchange has their wallets hacked irrelevant because you can just use any other service as a bridge and redeem your assets for any cryptocurrency you want or even cash. You’re not dependent on any exchange anymore, you don’t have to worry about it loosing funds or having poor security or bad management. If one service fails to meet your criteria you can just use another one.
+
+Transparency
+When you trade and you can be sure everything runs smoothly because the blockchain provides transparency. You can audit the exchange/service in real time on the blockchain. You can be sure what you trade, does in fact exist, because you’re doing it directly on the blockchain. Also no more front running, everything happens in real time, on the blockchain. 
+
+Better Customer Support
+Exchanges have more time to focus on customer support. Given all the job is done on the blockchain, exchanges can now provide a better support service and help users. This should in theory help users since we’ve seen multiple times how poor the support can be some times.
+
+Shared order books.
+Personally I love this idea. Assume many exchanges join and form a network all trading on the same chain. You have the volume of all of them combined. You have bigger market depth and the liquidity you need to trade. This is just awesome. Prices can’t be as easily manipulated. This can help solve the problem with liquidity. Assume there’s only the equivalent of a few thousands of dollars traded on the decentralized exchange. Then, one exchange that really cares about its customers decides to join in order to provide a better service. The decentralized exchange now has the thousands of dollars that were previously trading, plus the volume the exchange brings in. This combined allows it to compete with the volume of a bigger exchange, that in order to stay competitive, decides to join in too. What happens now? Volume increases, a lot, it can double just like that. Now this small network running on top of the decentralized exchange can compete with an exchange with the double their size if they were separated. In order to stay competitive, it decides to join too. The volume just doubled again. And so on. This may be wishful thinking but this might have the potential to absorb exchanges and grow a lot and thus, competing with the biggest of the exchanges. Now you have a huge network, with huge volumes and market depth but with all the advantages of a decentralized exchange. You get to compete with the giants while taking a fraction of the risk.
+</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>How do Exchanges Benefit?</h3>
+          
+<p>Improved security
+As I mentioned above, users also benefit from this. Since the exchange’s database was “migrated” to the blockchain, it can’t be attacked like it usually is, the whole blockchain would need to be target of an attack.
+
+Reduced costs. 
+This derives directly from the point above. The exchange doesn’t have to maintain and secure their customer database anymore. This saves time and man power, essential for other tasks, as well as money as it might not need to hire a developer to secure it. It can then redirect these costs and time where they’re needed the most and take maximum advantage of them.
+
+Network Effect 
+As a decentralized network of exchanges, every time the platform is promoted by any number of services to a customer, this is one more potential customer that will have exposure your exchange and can end up using it.
+
+Better brand and reputation. 
+Eventually all of these new proprieties provide a better service to the customer and are a statement of the exchange’s dedication to their users. It ends helping the exchange building its own brand, recognized by the quality of its services. A safe haven for its users, protecting them against the threats other exchanges are vulnerable to.
+
+Shared Order books
+This was something I’ve placed on the “User benefits” section but it also benefits exchanges. Why you may ask? Well, shared order books have more market depth and can help increase liquidity. Instead of having many illiquid markets trading the same assets, you have one single market for everyone. How do exchanges benefit from this? Users always look to trade on the exchanges with the most volume and liquidity so they don’t have to worry with huge spreads and big market swings. This makes it more attractive for users to use your service. This also makes it possible for a smaller exchange to compete with the big ones as the volume of all combined exchanges might be as big as the volume one some big centralized exchange. Exchanges don’t have to worry with liquidity any more. A new one can enter the market and provide the liquidity its users need right away without having to build it for long periods of time.
+
+
+……………….
+
+This post was made with the perspective that decentralized exchanges and third party services like the centralized exchanges and bridges we know, would work together. You could argue that we would only need bridges to get in and out, but you have to consider that centralized exchanges aren’t going away anytime soon, that both users and those same businesses benefit from this relationship and that having many businesses around is good for the ecosystem, since they’re the ones who do most of the work to attract new users and more capital. So there’s not really a reason to discard them. Both users and 3rd party services can coexist, mutually benefiting each other.
+</p>
+
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

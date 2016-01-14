@@ -1,0 +1,23 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is behind 'origin/master' by 4 commits, and can be fast-forwarded.
+#   (use "git pull" to update your local branch)
+#
+# Changes to be committed:
+	new file:   den.html
+	new file:   images/10-11-2015 OKCoinLtcDump.png
+	new file:   images/24-08-2015 - Bitfinex halts trading.png
+	new file:   images/avatar.png
+	new file:   images/cryptoinehack.png
+	new file:   images/cyrptsy.png
+	new file:   images/gemini_2200.png
+	new file:   index.html
+	new file:   javascripts/scale.fix.js
+	new file:   stylesheets/github-light.css
+	new file:   stylesheets/styles.css
+	new file:   timeline.html
+
+git pull
+
